@@ -1,0 +1,59 @@
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.masthead-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px 16px;
+}
+
+.masthead-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.masthead-mark {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: var(--accent);
+}
+
+.masthead-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.masthead-link {
+  padding: 4px 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.masthead-link:hover {
+  color: var(--text);
+}
+
+.masthead-link.active {
+  color: var(--text);
+  font-weight: 500;
+  border-bottom-color: var(--text);
+}

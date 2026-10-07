@@ -1,0 +1,54 @@
+.radar {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 12px;
+  overflow: visible;
+}
+
+.radar-ring,
+.radar-spoke {
+  fill: none;
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.radar-ring-outer {
+  stroke: var(--text-muted);
+}
+
+.radar-shape {
+  fill: color-mix(in srgb, var(--accent) 18%, transparent);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.radar-dot {
+  fill: var(--accent);
+  stroke: none;
+}
+
+.radar-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  fill: var(--text-muted);
+}
+
+.radar-hero {
+  --accent: var(--hero);
+}
+
+.radar-villain {
+  --accent: var(--villain);
+}
+
+.radar-neutral {
+  --accent: var(--neutral);
+}
+
+.radar-unknown {
+  --accent: var(--unknown);
+}

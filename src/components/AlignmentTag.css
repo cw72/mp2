@@ -1,0 +1,33 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tag::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tag-color);
+}
+
+.tag-hero {
+  --tag-color: var(--hero);
+}
+
+.tag-villain {
+  --tag-color: var(--villain);
+}
+
+.tag-neutral {
+  --tag-color: var(--neutral);
+}
+
+.tag-unknown {
+  --tag-color: var(--unknown);
+}
